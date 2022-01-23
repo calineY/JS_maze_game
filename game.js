@@ -39,6 +39,9 @@ window.onload = function () {
 
     function youWin() {
         if (status_var == "ingame") {
+            for (var i = 0; i < boundaries.length; i++) {
+                boundaries[i].style.background = "green";
+            }
             score += 5;
             status.innerHTML = "You win" + "_Score:" + score;
             status_var = "start";
